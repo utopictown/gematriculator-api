@@ -9,6 +9,10 @@ export default function Home() {
       <Head>
         <title>Gematriculator API</title>
         <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+        />
+        <meta
           property="og:title"
           content="public API for finding the value of a word or a phrase in Gematria"
           key="title"
@@ -38,23 +42,25 @@ export default function Home() {
           public API for finding the value of a word or a phrase in Gematria
         </h3>
 
-        <p className={styles.description}>
-          Go to
-          <code className={styles.code}>
-            <a href={`/api?text=${input}`} target="_blank">
-              /api/?text=
-            </a>
-            <input
-              type="text"
-              className={styles.init_input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyPress={(e) => {
-                if (input != "" && e.key == "Enter")
-                  window.open("/api?text=" + e.target.value, "_blank");
-              }}
-            />
-          </code>
-        </p>
+        <section className={styles.main_section}>
+          <p className={styles.description}>
+            Go to
+            <code className={styles.code}>
+              <a href={`/api?text=${input}`} target="_blank">
+                /api/?text=
+              </a>
+              <input
+                type="text"
+                className={styles.init_input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyPress={(e) => {
+                  if (input != "" && e.key == "Enter")
+                    window.open("/api?text=" + e.target.value, "_blank");
+                }}
+              />
+            </code>
+          </p>
+        </section>
       </main>
 
       <footer className={styles.footer}>
