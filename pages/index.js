@@ -8,6 +8,9 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Gematriculator API</title>
+        <description>
+          public API for finding the value of a word or a phrase in Gematria
+        </description>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
