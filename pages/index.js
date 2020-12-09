@@ -8,9 +8,27 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Gematriculator API</title>
-        <description>
-          public API for finding the value of a word or a phrase in Gematria
-        </description>
+        <meta
+          property="og:title"
+          content="public API for finding the value of a word or a phrase in Gematria"
+          key="title"
+        />
+        <meta name="og:site_name" content="Gematriculator API" />
+        <meta name="og:url" content="https://gematriculator-api.vercel.app" />
+        <meta
+          name="og:description"
+          content="public API for finding the value of a word or a phrase in Gematria"
+        />
+        <meta name="keywords" content="API, gematria" />
+        <meta
+          name="description"
+          content="public API for finding the value of a word or a phrase in Gematria"
+        />
+        <meta
+          name="subject"
+          content="public API for finding the value of a word or a phrase in Gematria"
+        />
+        <meta name="copyright" content="utopictown" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
