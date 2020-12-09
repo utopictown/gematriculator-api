@@ -34,9 +34,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Gematriculator API</h1>
-        <h4>
+        <h3>
           public API for finding the value of a word or a phrase in Gematria
-        </h4>
+        </h3>
 
         <p className={styles.description}>
           Go to
