@@ -58,6 +58,9 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
+        <a href="https://xeno.cx" target="_blank" rel="noopener noreferrer">
+          Source: xeno.cx
+        </a>
         <a
           href="https://twitter.com/utopictown"
           target="_blank"
