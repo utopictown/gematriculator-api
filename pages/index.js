@@ -15,7 +15,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Gematria API</h1>
+        <h1 className={styles.title}>Gematriculator API</h1>
+        <h4>
+          public API for finding the value of a word or a phrase in Gematria
+        </h4>
 
         <p className={styles.description}>
           Go to
